@@ -316,19 +316,56 @@
 .p-box .icon {
     margin-top: 1rem;
 }
-
-.p-box .icon i {
-    padding: 10px;
-    background-color:#828BB3;
-    border-radius: 50%;
-    color: #fff;
+.wrapper {
+    display: flex;
+  }
+.buttton {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    background: #828BB1;
+    margin: 0 3px;
     cursor: pointer;
-    transition: all 0.8s;
-}
+    transition: all 0.4s ease-out;
+    overflow: hidden;
+  }
+ .buttton:hover {
+    width: 100px;
+  }
+.buttton .icon {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 35px;
+    transition: all 0.2s ease-out;
+  }
 
-.p-box .icon i:hover {
-    background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-} 
+.icon i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(55%,25%);
+    font-size: 15px;
+    line-height: 20px;
+    transition: all 0.2s ease-out;
+    color: rgb(255, 255, 255);
+  }
+
+.buttton span {
+    position: absolute;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 100;
+    margin-left: 3px;
+    top: 50%;
+    transition: all 0.2s ease-out;
+    transform: translateY(-50%);
+
+  }
+  
 .p-box h3 {
     font-weight: 500;
     font-size: 15px;
